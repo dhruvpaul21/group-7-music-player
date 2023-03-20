@@ -1,0 +1,128 @@
+/*default*/
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*for the whole body*/
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #121212;
+  color: white;
+}
+
+h5 {
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/*scrollbar on the right*/
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #121212;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/*for all grids of the site*/
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 0.5rem;
+}
+
+/*for items of the grid*/
+.item {
+  background-color: #121212; /*dhruv change*/
+  border-radius: 5px;
+  font-size: 0.9rem;
+  padding: 5px;
+}
+
+.item img {
+  width: 100%;
+  border-radius: 5px;
+  aspect-ratio: 1/1;
+}
+
+/*to change the cursor when hovering over clickable items*/
+.item:hover {
+  cursor: pointer;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+/*for different screen sizes*/
+@media only screen and (max-width: 1310px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 0.5rem;
+  }
+}
+
+/*for different screen sizes*/
+@media only screen and (max-width: 995px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0.5rem;
+  }
+}
+
+/*for different screen sizes*/
+@media only screen and (max-width: 910px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 0.5rem;
+  }
+}
+
+/*for different screen sizes*/
+@media only screen and (max-width: 710px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 0.5rem;
+  }
+}
+
+/*for different screen sizes*/
+@media only screen and (max-width: 650px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0.5rem;
+  }
+}
+
+/*for different screen sizes*/
+@media only screen and (max-width: 510px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+  }
+}
+
+/*for different screen sizes*/
+@media only screen and (max-width: 300px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+}
